@@ -11,9 +11,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Mount the local directory as a volume in the container
 VOLUME [ "/app" ]
 
-# Set up pre-commit hooks
-RUN pre-commit install
-
 # Expose port 8000 for the FastAPI application
 EXPOSE 8000
 
