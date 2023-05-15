@@ -15,4 +15,4 @@ VOLUME [ "/app" ]
 EXPOSE 8000
 
 # Start the FastAPI application using uvicorn with hot-reloading
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
+CMD ["uvicorn", "main:api", "--host", "0.0.0.0", "--port", "8000", "--reload"]
